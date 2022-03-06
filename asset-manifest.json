@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/brickhack-pairIt/static/css/main.51a49138.css",
+    "main.js": "/brickhack-pairIt/static/js/main.996f710f.js",
+    "static/media/landing-page-4.png": "/brickhack-pairIt/static/media/landing-page-4.4e2012c81fa9d58380c8.png",
+    "static/media/landing-page-2.png": "/brickhack-pairIt/static/media/landing-page-2.becab84f5a9a67af0381.png",
+    "index.html": "/brickhack-pairIt/index.html",
+    "main.51a49138.css.map": "/brickhack-pairIt/static/css/main.51a49138.css.map",
+    "main.996f710f.js.map": "/brickhack-pairIt/static/js/main.996f710f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51a49138.css",
+    "static/js/main.996f710f.js"
+  ]
+}
