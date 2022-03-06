@@ -121,7 +121,7 @@ export const questionList = [
   },
   {
     // Q6
-    question: "What is your spirit animal",
+    question: "What is your spirit animal?",
     answers: [
       {
         content: "Wolf",
@@ -142,7 +142,7 @@ export const questionList = [
   },
   {
     // Q7
-    question: "choose a pet",
+    question: "choose a pet:",
     answers: [
       {
         content: "Cat",
@@ -163,7 +163,7 @@ export const questionList = [
   },
   {
     // Q8
-    question: "Choose a superhero",
+    question: "Choose a superhero:",
     answers: [
       {
         content: "SpiderMan",
@@ -184,7 +184,7 @@ export const questionList = [
   },
   {
     // Q9
-    question: "What is your ideal place to live",
+    question: "What is your ideal place to live?",
     answers: [
       {
         content: "Tent",
@@ -247,7 +247,7 @@ export const questionList = [
   },
   {
     // Q12
-    question: "What fruit would you choose",
+    question: "What fruit would you choose?",
     answers: [
       {
         content: "Apple",
@@ -289,7 +289,7 @@ export const questionList = [
   },
   {
     // Q14
-    question: "Choose the color you like the most",
+    question: "Choose the color you like the most?",
     answers: [
       {
         content: "Red",
@@ -310,7 +310,7 @@ export const questionList = [
   },
   {
     // Q15
-    question: "Favorite Weather",
+    question: "Favorite Weather?",
     answers: [
       {
         content: "Summer",

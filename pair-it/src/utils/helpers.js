@@ -1,5 +1,9 @@
 import { questionList } from "../constants/constants";
 
+/**
+ *
+ * @returns list of 7 random question numbers from the list of all questions.
+ */
 export const getQuestions = () => {
   let ques = [];
   let i = 0;
