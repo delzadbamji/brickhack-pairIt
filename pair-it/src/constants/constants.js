@@ -247,5 +247,131 @@ let questionList = [
         value: ""
       }
     ]
+  },
+  {
+    // Q14
+    question: "The hard Decision: Choose your mobile OS",
+    answers: [
+      {
+        content: "iOS",
+        value: ""
+      },
+      {
+        content: "Android",
+        value: ""
+      },
+      {
+        content: "OxygenOS",
+        value: ""
+      }
+    ]
+  },
+  {
+    // Q15
+    question: "Favorite Weather",
+    answers: [
+      {
+        content: "Summer",
+        value: ""
+      },
+      {
+        content: "Monsoon",
+        value: ""
+      },
+      {
+        content: "Winter",
+        value: ""
+      }
+    ]
+  },
+  {
+    // Q16
+    question: "Favorite Grocery store?",
+    answers: [
+      {
+        content: "Walmart",
+        value: ""
+      },
+      {
+        content: "Target",
+        value: ""
+      },
+      {
+        content: "Dollar Tree",
+        value: ""
+      }
+    ]
+  },
+  {
+    // Q17
+    question: "Favorite online shopping site?",
+    answers: [
+      {
+        content: "Walmart",
+        value: ""
+      },
+      {
+        content: "Amazon",
+        value: ""
+      },
+      {
+        content: "eBay",
+        value: ""
+      }
+    ]
+  },
+  {
+    // Q18
+    question: "What identifies with you more?",
+    answers: [
+      {
+        content: "Morning Person",
+        value: ""
+      },
+      {
+        content: "Night Owl",
+        value: ""
+      },
+      {
+        content: "I live on Coffee",
+        value: ""
+      }
+    ]
+  },
+  {
+    // Q19
+    question: "Favorite beverage?",
+    answers: [
+      {
+        content: "Orgnic Juice",
+        value: ""
+      },
+      {
+        content: "Fizzy Soda",
+        value: ""
+      },
+      {
+        content: "Just Water",
+        value: ""
+      }
+    ]
+  },
+  {
+    // Q20
+    question: "What fits your personality best?",
+    answers: [
+      {
+        content: "Parties",
+        value: ""
+      },
+      {
+        content: "Netflix and food",
+        value: ""
+      },
+      {
+        content: "Gym",
+        value: ""
+      }
+    ]
   }
 ];
