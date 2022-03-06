@@ -15,6 +15,7 @@ const Router = (props) => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/brickhack-pairIt" element={<LandingPage />} />
         <Route path="/" element={<LandingPage />} />
         {/* <Suspense fallback={<Loading />}> */}
         <Route path="/quiz" element={<QuizPage />} />
