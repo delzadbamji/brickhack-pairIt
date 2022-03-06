@@ -1,13 +1,24 @@
-import React from "react";
-// import { useNavigate } from "react-router";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router";
 import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
+import SequenceContext from "../utils/SequenceContext";
+import { getQuestions } from "../utils/helpers";
+
 function Results() {
+  const navigate = useNavigate();
+  const [sequence, setContext] = useContext(SequenceContext);
+
+  const handleOnClick = () => {
+    setContext(getQuestions());
+    navigate("/");
+  };
+
   return (
     <div style={styles.outerContainer}>
       <div style={styles.innerContainer}>
         <Header Content={"Viola! We've computed the best match for YOU:"} />
-        <LandingButton Content={"Try Again?"} />
+        <LandingButton Content={"Try Again?"} onClick={handleOnClick} />
       </div>
     </div>
   );

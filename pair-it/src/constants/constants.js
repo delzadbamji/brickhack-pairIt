@@ -1,4 +1,4 @@
-export const randomNumberTo10 = Math.abs(Math.floor(Math.random() * 10));
+// export const randomNumberTo10 = Math.abs(Math.floor(Math.random() * 10));
 
 export const alcohols = {
   30: "Martini",
@@ -82,17 +82,17 @@ export const questionList = [
     question: "Choose a number.",
     answers: [
       {
-        content: randomNumberTo10,
+        content: Math.abs(Math.floor(Math.random() * 10)),
         value: "",
         image: "https://source.unsplash.com/400x300/?1"
       },
       {
-        content: randomNumberTo10,
+        content: Math.abs(Math.floor(Math.random() * 10)),
         value: "",
         image: "https://source.unsplash.com/400x300/?number"
       },
       {
-        content: randomNumberTo10,
+        content: Math.abs(Math.floor(Math.random() * 10)),
         value: "",
         image: "https://source.unsplash.com/400x300/?numbers"
       }
@@ -346,7 +346,7 @@ export const questionList = [
       {
         content: "Politics",
         value: "",
-        image: "https://source.unsplash.com/400x300/?dollars"
+        image: "https://source.unsplash.com/400x300/?politics"
       }
     ]
   },
