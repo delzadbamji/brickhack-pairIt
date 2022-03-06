@@ -5,7 +5,7 @@ function Image(props) {
     <div>
       <img
         src={props.source}
-        alt={props.source.substring(props.source.indexOf("?") + 1)}
+        // alt={props.source.substring(props.source.indexOf("?") + 1)}
       ></img>
     </div>
   );

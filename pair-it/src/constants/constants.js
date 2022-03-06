@@ -1,63 +1,63 @@
 // export const randomNumberTo10 = Math.abs(Math.floor(Math.random() * 10));
 
-export const alcohols = {
-  30: { alc: "Martini", image: "https://source.unsplash.com/400x300/?martini" },
-  40: { alc: "Rum", image: "https://source.unsplash.com/400x300/?rum" },
-  50: { alc: "Whisky", image: "https://source.unsplash.com/400x300/?whisky" },
-  20: {
+export const alcohols = [
+  { alc: "Martini", image: "https://source.unsplash.com/400x300/?martini" },
+  { alc: "Rum", image: "https://source.unsplash.com/400x300/?rum" },
+  { alc: "Whisky", image: "https://source.unsplash.com/400x300/?whisky" },
+  {
     alc: "Baileys Irish Cream",
     image: "../constants/baileys.jpg"
   },
-  10: {
+  {
     alc: "Apple Cider",
     image: "../constants/appleCider.jpg"
   },
-  60: { alc: "Sambuca", image: "https://source.unsplash.com/400x300/?samuca" },
-  70: { alc: "Tequila", image: "https://source.unsplash.com/400x300/?tequila" },
-  45: { alc: "Wine", image: "https://source.unsplash.com/400x300/?wine" },
-  35: { alc: "Beer", image: "https://source.unsplash.com/400x300/?beer" },
-  55: { alc: "Vodka", image: "https://source.unsplash.com/400x300/?vodka" }
-};
+  { alc: "Sambuca", image: "https://source.unsplash.com/400x300/?whisky" },
+  { alc: "Tequila", image: "https://source.unsplash.com/400x300/?tequila" },
+  { alc: "Wine", image: "https://source.unsplash.com/400x300/?wine" },
+  { alc: "Beer", image: "https://source.unsplash.com/400x300/?beer" },
+  { alc: "Vodka", image: "https://source.unsplash.com/400x300/?vodka" }
+];
 
-export const foods = {
-  30: {
+export const foods = [
+  {
     food: "Pizza",
     image: "https://source.unsplash.com/400x300/?pizza"
   },
-  40: {
+  {
     food: "Peanuts",
     image: "https://source.unsplash.com/400x300/?peanuts"
   },
-  50: {
+  {
     food: "Crackers",
     image: "https://source.unsplash.com/400x300/?crackers"
   },
-  20: {
+  {
     food: "Gouda",
-    image: "https://source.unsplash.com/400x300/?cheddar"
+    image: "https://source.unsplash.com/400x300/?cheese"
   },
-  10: {
+  {
     food: "Citrus Fruits",
     image: "https://source.unsplash.com/400x300/?citrus"
   },
-  60: {
+  {
     food: "Chicken Wings",
     image: "https://source.unsplash.com/400x300/?chickenwings"
   },
-  70: {
+  {
     food: "Smoked Ribs",
     image: "https://source.unsplash.com/400x300/?ribs"
   },
-  45: {
+  {
     food: "Aged Cheddar",
-    image: "https://source.unsplash.com/400x300/?cheddar"
+    image: "https://source.unsplash.com/400x300/?cheese"
   },
-  35: {
+  {
     food: "Fast food",
     image: "https://source.unsplash.com/400x300/?burgers"
   },
-  55: { food: "Fries", image: "https://source.unsplash.com/400x300/?fries" }
-};
+  { food: "Fries", image: "https://source.unsplash.com/400x300/?fries" }
+];
 
 export const questionList = [
   {
