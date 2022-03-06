@@ -1,4 +1,4 @@
-export const randomNumberTo10 = Math.floor(Math.random() * 10);
+export const randomNumberTo10 = Math.abs(Math.floor(Math.random() * 10));
 
 export const alcohols = {
   30: "Martini",
@@ -20,15 +20,18 @@ export const questionList = [
     answers: [
       {
         content: "Pizza",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?pizza"
       },
       {
         content: "Sandwich",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?sandwich"
       },
       {
         content: "Veggies",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?vegetables"
       }
     ]
   },
@@ -38,15 +41,18 @@ export const questionList = [
     answers: [
       {
         content: "Tennis",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?tennis"
       },
       {
         content: "Football",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?soccer"
       },
       {
         content: "Video Games",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?videoGame"
       }
     ]
   },
@@ -56,15 +62,18 @@ export const questionList = [
     answers: [
       {
         content: "Smart",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?computers"
       },
       {
         content: "Adventurous",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?skyDiving"
       },
       {
         content: "Introverted",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?introvert"
       }
     ]
   },
@@ -74,15 +83,18 @@ export const questionList = [
     answers: [
       {
         content: randomNumberTo10,
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?1"
       },
       {
         content: randomNumberTo10,
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?number"
       },
       {
         content: randomNumberTo10,
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?numbers"
       }
     ]
   },
@@ -92,15 +104,18 @@ export const questionList = [
     answers: [
       {
         content: "Reading",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?reading"
       },
       {
         content: "Sky Diving",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?skyDiving"
       },
       {
         content: "Dancing",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?dancing"
       }
     ]
   },
@@ -110,15 +125,18 @@ export const questionList = [
     answers: [
       {
         content: "Wolf",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?wolf"
       },
       {
         content: "Deer",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?deer"
       },
       {
         content: "Horse",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?horse"
       }
     ]
   },
@@ -128,15 +146,18 @@ export const questionList = [
     answers: [
       {
         content: "Cat",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?cat"
       },
       {
         content: "Dog",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?dog"
       },
       {
         content: "Lizard",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?lizard"
       }
     ]
   },
@@ -145,16 +166,19 @@ export const questionList = [
     question: "Choose a superhero",
     answers: [
       {
-        content: "Ironman",
-        value: ""
+        content: "SpiderMan",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?spiderman"
       },
       {
         content: "Superman",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?superman"
       },
       {
         content: "Groot",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?treebark"
       }
     ]
   },
@@ -164,15 +188,18 @@ export const questionList = [
     answers: [
       {
         content: "Tent",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?tent"
       },
       {
         content: "Apartment",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?apartment"
       },
       {
         content: "House",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?house"
       }
     ]
   },
@@ -182,15 +209,18 @@ export const questionList = [
     answers: [
       {
         content: "Motorbike",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?motorbike"
       },
       {
         content: "Car",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?car"
       },
       {
         content: "Bicycle",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?cycle"
       }
     ]
   },
@@ -200,15 +230,18 @@ export const questionList = [
     answers: [
       {
         content: "Army",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?army"
       },
       {
         content: "Navy",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?navy"
       },
       {
         content: "Air Force",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?airForce"
       }
     ]
   },
@@ -218,15 +251,18 @@ export const questionList = [
     answers: [
       {
         content: "Apple",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?apple"
       },
       {
         content: "Pineapple",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?pineapple"
       },
       {
         content: "Watermelon",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?watermelon"
       }
     ]
   },
@@ -236,15 +272,18 @@ export const questionList = [
     answers: [
       {
         content: "Inner Beauty",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?heart"
       },
       {
         content: "Outer Beauty",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?makeup"
       },
       {
         content: "Intelligence",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?library"
       }
     ]
   },
@@ -254,15 +293,18 @@ export const questionList = [
     answers: [
       {
         content: "Red",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?red"
       },
       {
         content: "Blue",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?blue"
       },
       {
         content: "Yellow",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?yellow"
       }
     ]
   },
@@ -272,51 +314,60 @@ export const questionList = [
     answers: [
       {
         content: "Summer",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?summer"
       },
       {
         content: "Monsoon",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?monsoon"
       },
       {
         content: "Winter",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?winter"
       }
     ]
   },
   {
     // Q16
-    question: "Favorite Grocery store?",
+    question: "Which stream do you connect to the most?",
     answers: [
       {
-        content: "Walmart",
-        value: ""
+        content: "Arts & Music",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?art"
       },
       {
-        content: "Target",
-        value: ""
+        content: "Commerce",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?dollars"
       },
       {
-        content: "Dollar Tree",
-        value: ""
+        content: "Politics",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?dollars"
       }
     ]
   },
   {
     // Q17
-    question: "Favorite online shopping site?",
+    question: "Favorite vacation location?",
     answers: [
       {
-        content: "Walmart",
-        value: ""
+        content: "Beach",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?beach"
       },
       {
-        content: "Amazon",
-        value: ""
+        content: "Mountains",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?hills"
       },
       {
-        content: "eBay",
-        value: ""
+        content: "Lake",
+        value: "",
+        image: "https://source.unsplash.com/400x300/?lake"
       }
     ]
   },
@@ -326,15 +377,18 @@ export const questionList = [
     answers: [
       {
         content: "Morning Person",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?morning"
       },
       {
         content: "Night Owl",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?night"
       },
       {
         content: "I live on Coffee",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?coffee"
       }
     ]
   },
@@ -344,15 +398,18 @@ export const questionList = [
     answers: [
       {
         content: "Organic Juice",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?juice"
       },
       {
         content: "Fizzy Soda",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?coke"
       },
       {
         content: "Just Water",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?water"
       }
     ]
   },
@@ -362,15 +419,18 @@ export const questionList = [
     answers: [
       {
         content: "Parties",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?party"
       },
       {
         content: "Netflix and food",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?netflix"
       },
       {
         content: "Gym",
-        value: ""
+        value: "",
+        image: "https://source.unsplash.com/400x300/?gym"
       }
     ]
   }

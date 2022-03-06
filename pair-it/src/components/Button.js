@@ -15,8 +15,8 @@ const styles = {
   text: {
     height: "100%",
     width: "100%",
-    minWidth: "150px",
-    minHeight: "60px",
+    minWidth: "300px",
+    minHeight: "80px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

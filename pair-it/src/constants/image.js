@@ -1,63 +1,63 @@
 let rickyBrick =
   "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/judge_photos/001/859/014/datas/large.png";
 
-let Pizza = "https://source.unsplash.com/400x300/?pizza";
-let Sandwich = "https://source.unsplash.com/400x300/?sandwich";
-let Veggies = "https://source.unsplash.com/400x300/?vegetables";
-let Tennis = "https://source.unsplash.com/400x300/?tennis";
-let Football = "https://source.unsplash.com/400x300/?soccer";
-let videoGame = "https://source.unsplash.com/400x300/?videoGame";
-let Smart = "https://source.unsplash.com/400x300/?computers";
-let Adventurous = "https://source.unsplash.com/400x300/?skyDiving";
-let Introverted = "https://source.unsplash.com/400x300/?introvert";
-let one = "https://source.unsplash.com/400x300/?1";
-let two = "https://source.unsplash.com/400x300/?number";
-let three = "https://source.unsplash.com/400x300/?numbers";
-let Reading = "https://source.unsplash.com/400x300/?reading";
-let SkyDiving = "https://source.unsplash.com/400x300/?skyDiving";
-let Dancing = "https://source.unsplash.com/400x300/?dancing";
-let Wolf = "https://source.unsplash.com/400x300/?wolf";
-let Deer = "https://source.unsplash.com/400x300/?deer";
-let Horse = "https://source.unsplash.com/400x300/?horse";
-let Cat = "https://source.unsplash.com/400x300/?cat";
-let Dog = "https://source.unsplash.com/400x300/?dog";
-let Lizard = "https://source.unsplash.com/400x300/?lizard";
-let Ironman = "https://source.unsplash.com/400x300/?videoGame";
-let Superman = "https://source.unsplash.com/400x300/?videoGame";
-let Groot = "https://source.unsplash.com/400x300/?videoGame";
-let Tent = "https://source.unsplash.com/400x300/?tent";
-let Apartment = "https://source.unsplash.com/400x300/?apartment";
-let House = "https://source.unsplash.com/400x300/?house";
-let Motorbike = "https://source.unsplash.com/400x300/?motorbike";
-let Car = "https://source.unsplash.com/400x300/?car";
-let Bicycle = "https://source.unsplash.com/400x300/?cycle";
-let Army = "https://source.unsplash.com/400x300/?army";
-let Navy = "https://source.unsplash.com/400x300/?navy";
-let AirForce = "https://source.unsplash.com/400x300/?airForce";
-let Apple = "https://source.unsplash.com/400x300/?apple";
-let Pineapple = "https://source.unsplash.com/400x300/?pineapple";
-let Watermelon = "https://source.unsplash.com/400x300/?watermelon";
-let InnerBeauty = "https://source.unsplash.com/400x300/?heart";
-let OuterBeauty = "https://source.unsplash.com/400x300/?makeup";
-let Intelligence = "https://source.unsplash.com/400x300/?library";
-let Red = "https://source.unsplash.com/400x300/?iphone";
-let Blue = "https://source.unsplash.com/400x300/?android";
-let Yellow = "https://source.unsplash.com/400x300/?red";
-let Summer = "https://source.unsplash.com/400x300/?blue";
-let Monsoon = "https://source.unsplash.com/400x300/?yellow";
-let Winter = "https://source.unsplash.com/400x300/?summer";
-// let Car = "https://source.unsplash.com/400x300/?monsoon";
-// let Car = "https://source.unsplash.com/400x300/?winter";
-// let Car = "https://source.unsplash.com/400x300/?walmart";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
-// let Car = "https://source.unsplash.com/400x300/?";
+// let Pizza:"https://source.unsplash.com/400x300/?pizza",
+// let Sandwich:"https://source.unsplash.com/400x300/?sandwich",
+// let Veggies:"https://source.unsplash.com/400x300/?vegetables",
+// let Tennis:"https://source.unsplash.com/400x300/?tennis",
+// let Football:"https://source.unsplash.com/400x300/?soccer",
+// let videoGame:"https://source.unsplash.com/400x300/?videoGame",
+// let Smart:"https://source.unsplash.com/400x300/?computers",
+// let Adventurous:"https://source.unsplash.com/400x300/?skyDiving",
+// let Introverted:"https://source.unsplash.com/400x300/?introvert",
+// let one:"https://source.unsplash.com/400x300/?1",
+// let two:"https://source.unsplash.com/400x300/?number",
+// let three:"https://source.unsplash.com/400x300/?numbers",
+// let Reading:"https://source.unsplash.com/400x300/?reading",
+// let SkyDiving:"https://source.unsplash.com/400x300/?skyDiving",
+// let Dancing:"https://source.unsplash.com/400x300/?dancing",
+// let Wolf:"https://source.unsplash.com/400x300/?wolf",
+// let Deer:"https://source.unsplash.com/400x300/?deer",
+// let Horse:"https://source.unsplash.com/400x300/?horse",
+// let Cat:"https://source.unsplash.com/400x300/?cat",
+// let Dog:"https://source.unsplash.com/400x300/?dog",
+// let Lizard:"https://source.unsplash.com/400x300/?lizard",
+// let Ironman:"https://source.unsplash.com/400x300/?videoGame",
+// let Superman:"https://source.unsplash.com/400x300/?videoGame",
+// let Groot:"https://source.unsplash.com/400x300/?videoGame",
+// let Tent:"https://source.unsplash.com/400x300/?tent",
+// let Apartment:"https://source.unsplash.com/400x300/?apartment",
+// let House:"https://source.unsplash.com/400x300/?house",
+// let Motorbike:"https://source.unsplash.com/400x300/?motorbike",
+// let Car:"https://source.unsplash.com/400x300/?car",
+// let Bicycle:"https://source.unsplash.com/400x300/?cycle",
+// let Army:"https://source.unsplash.com/400x300/?army",
+// let Navy:"https://source.unsplash.com/400x300/?navy",
+// let AirForce:"https://source.unsplash.com/400x300/?airForce",
+// let Apple:"https://source.unsplash.com/400x300/?apple",
+// let Pineapple:"https://source.unsplash.com/400x300/?pineapple",
+// let Watermelon:"https://source.unsplash.com/400x300/?watermelon",
+// let InnerBeauty:"https://source.unsplash.com/400x300/?heart",
+// let OuterBeauty:"https://source.unsplash.com/400x300/?makeup",
+// let Intelligence:"https://source.unsplash.com/400x300/?library",
+// let Red:"https://source.unsplash.com/400x300/?iphone",
+// let Blue:"https://source.unsplash.com/400x300/?android",
+// let Yellow:"https://source.unsplash.com/400x300/?red",
+// let Summer:"https://source.unsplash.com/400x300/?blue",
+// let Monsoon:"https://source.unsplash.com/400x300/?yellow",
+// let Winter:"https://source.unsplash.com/400x300/?summer",
+// let Car:"https://source.unsplash.com/400x300/?monsoon",
+// let Car:"https://source.unsplash.com/400x300/?winter",
+// let Car:"https://source.unsplash.com/400x300/?walmart",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
+// let Car:"https://source.unsplash.com/400x300/?",
 
 // https://source.unsplash.com/400x300/?

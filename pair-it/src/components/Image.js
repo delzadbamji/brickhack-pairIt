@@ -3,7 +3,10 @@ import React from "react";
 function Image(props) {
   return (
     <div>
-      <img src="https://source.unsplash.com/400x300/?tent"></img>
+      <img
+        src={props.source}
+        alt={props.source.substring(props.source.indexOf("?") + 1)}
+      ></img>
     </div>
   );
 }

@@ -13,14 +13,28 @@ function QuizPage() {
     return questionList[itemNumber].answers[number].content;
   };
 
+  const getImage = (number) => {
+    const itemNumber = sequence[0];
+    return questionList[itemNumber].answers[number].image;
+  };
+
   const [optionOne, setOne] = useState(getOptions(0));
   const [optionTwo, setTwo] = useState(getOptions(1));
   const [optionThree, setThree] = useState(getOptions(2));
+
+  const [ImageOne, setImageOne] = useState(getImage(0));
+  const [ImageTwo, setImageTwo] = useState(getImage(1));
+  const [ImageThree, setImageThree] = useState(getImage(2));
+
   const updateOption = (index) => {
     const itemNumber = sequence[index];
     setOne(questionList[itemNumber]?.answers[0]?.content);
     setTwo(questionList[itemNumber]?.answers[1]?.content);
     setThree(questionList[itemNumber]?.answers[2]?.content);
+
+    setImageOne(questionList[itemNumber]?.answers[0]?.image);
+    setImageTwo(questionList[itemNumber]?.answers[1]?.image);
+    setImageThree(questionList[itemNumber]?.answers[2]?.image);
   };
 
   const navigate = useNavigate();
@@ -39,9 +53,9 @@ function QuizPage() {
         Personality test to pair the right snack to your drink.
       </div>
       <div style={styles.row}>
-        <Image />
-        <Image />
-        <Image />
+        <Image source={ImageOne} />
+        <Image source={ImageTwo} />
+        <Image source={ImageThree} />
       </div>
       <div style={styles.buttonRow}>
         <Button
