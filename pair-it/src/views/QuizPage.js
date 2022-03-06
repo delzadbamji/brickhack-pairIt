@@ -6,7 +6,7 @@ import { questionList } from "../constants/constants";
 import SequenceContext from "../utils/SequenceContext";
 
 function QuizPage() {
-  const sequence = useContext(SequenceContext);
+  const [sequence, setContext] = useContext(SequenceContext);
 
   const getOptions = (number) => {
     const itemNumber = sequence[0];
@@ -18,9 +18,16 @@ function QuizPage() {
     return questionList[itemNumber].answers[number].image;
   };
 
+  const getQ = () => {
+    const itemNumber = sequence[0];
+    return questionList[itemNumber].question;
+  };
+
   const [optionOne, setOne] = useState(getOptions(0));
   const [optionTwo, setTwo] = useState(getOptions(1));
   const [optionThree, setThree] = useState(getOptions(2));
+
+  const [q, setQuestion] = useState(getQ());
 
   const [ImageOne, setImageOne] = useState(getImage(0));
   const [ImageTwo, setImageTwo] = useState(getImage(1));
@@ -35,6 +42,8 @@ function QuizPage() {
     setImageOne(questionList[itemNumber]?.answers[0]?.image);
     setImageTwo(questionList[itemNumber]?.answers[1]?.image);
     setImageThree(questionList[itemNumber]?.answers[2]?.image);
+
+    setQuestion(questionList[itemNumber]?.question);
   };
 
   const navigate = useNavigate();
@@ -49,9 +58,7 @@ function QuizPage() {
   };
   return (
     <div style={styles.outerContainer}>
-      <div style={styles.header}>
-        Personality test to pair the right snack to your drink.
-      </div>
+      <div style={styles.header}>{q}</div>
       <div style={styles.row}>
         <Image source={ImageOne} />
         <Image source={ImageTwo} />
