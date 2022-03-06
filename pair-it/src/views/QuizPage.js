@@ -28,7 +28,7 @@ function QuizPage() {
 
   const handleOnClick = () => {
     if (index === 7) {
-      navigate("/result");
+      navigate("/results");
     }
     updateOption(index);
     setIndex(index + 1);
