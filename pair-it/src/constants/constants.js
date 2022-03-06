@@ -19,6 +19,32 @@ export const alcohols = [
   { alc: "Vodka", image: "https://source.unsplash.com/400x300/?vodka" }
 ];
 
+export const drinkHeuristics = {
+  Martini: 30,
+  Rum: 40,
+  Whisky: 50,
+  "Baileys Irish Cream": 10,
+  "Apple Cider": 10,
+  Sambuca: 50,
+  Tequila: 50,
+  Wine: 30,
+  Beer: 20,
+  Vodka: 40
+};
+
+export const foodHeuristics = {
+  Crackers: 30,
+  "Fast food": 40,
+  "Smoked Ribs": 50,
+  Fries: 10,
+  "Citrus Fruits": 10,
+  "Chicken Wings": 50,
+  Pizza: 50,
+  "Aged Cheddar": 30,
+  Peanuts: 20,
+  Gouda: 40
+};
+
 export const foods = [
   {
     food: "Pizza",
