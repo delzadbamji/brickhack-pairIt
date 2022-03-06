@@ -6,7 +6,7 @@ import { questionList } from "../constants/constants";
 import SequenceContext from "../utils/SequenceContext";
 
 function QuizPage() {
-  const sequence = useContext(SequenceContext);
+  const [sequence, setContext] = useContext(SequenceContext);
 
   /**
    * @param {*} number denotes the buttonNumber of the selected item in the list of questions
@@ -26,12 +26,17 @@ function QuizPage() {
     return questionList[itemNumber].answers[number].image;
   };
 
-  // Store state of each button/choice
+  const getQ = () => {
+    const itemNumber = sequence[0];
+    return questionList[itemNumber].question;
+  };
+
   const [optionOne, setOne] = useState(getOptions(0));
   const [optionTwo, setTwo] = useState(getOptions(1));
   const [optionThree, setThree] = useState(getOptions(2));
 
-  // Storing images associated with each button/choice
+  const [q, setQuestion] = useState(getQ());
+
   const [ImageOne, setImageOne] = useState(getImage(0));
   const [ImageTwo, setImageTwo] = useState(getImage(1));
   const [ImageThree, setImageThree] = useState(getImage(2));
@@ -49,6 +54,8 @@ function QuizPage() {
     setImageOne(questionList[itemNumber]?.answers[0]?.image);
     setImageTwo(questionList[itemNumber]?.answers[1]?.image);
     setImageThree(questionList[itemNumber]?.answers[2]?.image);
+
+    setQuestion(questionList[itemNumber]?.question);
   };
 
   const navigate = useNavigate();
@@ -65,9 +72,10 @@ function QuizPage() {
 
   return (
     <div style={styles.outerContainer}>
-      <div style={styles.header}>
-        Personality test to pair the right snack to your drink.
+      <div style={styles.innerContainer}>
+        <div style={styles.header}>{q}</div>
       </div>
+
       <div style={styles.row}>
         <Image source={ImageOne} />
         <Image source={ImageTwo} />
@@ -105,8 +113,17 @@ const styles = {
     gap: "50px",
     height: "100vh"
   },
+  innerContainer: {
+    display: "flex",
+    justifyContent: "center",
+    background: "antiquewhite",
+    padding: "50px",
+    alignItems: "center",
+    flexDirection: "column",
+    gap: "50px"
+  },
   header: {
-    fontSize: "20px",
+    fontSize: "60px",
     fontWeight: "800"
   },
   start: {
@@ -117,9 +134,6 @@ const styles = {
     alignItems: "center",
     border: "1px solid #D94646",
     backgroundColor: "#D14B32",
-    // #D14B32
-    // boxShadow: "inset -10px 10px 0.4em pink",
-
     borderRadius: "4px"
   },
   startText: {
