@@ -1,6 +1,6 @@
-let randomNumberTo10 = Math.floor(Math.random() * 10);
+export const randomNumberTo10 = Math.floor(Math.random() * 10);
 
-const alcohols = [
+export const alcohols = [
   "Martini",
   "Rum",
   "Whisky",
@@ -13,7 +13,7 @@ const alcohols = [
   "Vodka"
 ];
 
-let questionList = [
+export const questionList = [
   {
     // Q1
     question: "What food would you choose?",

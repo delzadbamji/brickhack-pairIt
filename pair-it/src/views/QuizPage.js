@@ -1,37 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router";
 import Button from "../components/Button";
 import Image from "../components/Image";
 import { questionList } from "../constants/constants";
+import SequenceContext from "../utils/SequenceContext";
+
 function QuizPage() {
-  //   const getQuestions = () => {
-  //     let ques = [];
-  //     for (let i = 0; i < 7; i++) {
-  //       const randomNumber = Math.floor(Math.random() * questionList.length - 1);
-  //       ques.append(randomNumber);
-  //     }
-  //     setIndex(index + 1);
-  //     setOne(ques[0].answers[0].content);
-  //     return ques;
-  //   };
+  const sequence = useContext(SequenceContext);
 
-  //   const navigate = useNavigate();
-  //   const [questions, setQuestions] = useState(getQuestions());
-  //   const [index, setIndex] = useState(0);
-  //   const [optionOne, setOne] = useState("");
-  //   const [optionTwo, setTwo] = useState("");
-  //   const [optionThree, setThree] = useState("");
+  const getOptions = (number) => {
+    const itemNumber = sequence[0];
+    return questionList[itemNumber].answers[number].content;
+  };
 
-  //   const handleOnClick = () => {
-  //     if (index === 7) {
-  //       navigate("/result");
-  //     }
-  //     const newValues = questions[index].answers;
-  //     setOne(newValues[0].content);
-  //     setTwo(newValues[1].content);
-  //     setThree(newValues[2].content);
-  //     setIndex(index + 1);
-  //   };
+  const [optionOne, setOne] = useState(getOptions(0));
+  const [optionTwo, setTwo] = useState(getOptions(1));
+  const [optionThree, setThree] = useState(getOptions(2));
+  const updateOption = (index) => {
+    const itemNumber = sequence[index];
+    setOne(questionList[itemNumber]?.answers[0]?.content);
+    setTwo(questionList[itemNumber]?.answers[1]?.content);
+    setThree(questionList[itemNumber]?.answers[2]?.content);
+  };
+
+  const navigate = useNavigate();
+  const [index, setIndex] = useState(1);
+
+  const handleOnClick = () => {
+    if (index === 7) {
+      navigate("/result");
+    }
+    updateOption(index);
+    setIndex(index + 1);
+  };
   return (
     <div style={styles.outerContainer}>
       <div style={styles.header}>
@@ -43,9 +44,24 @@ function QuizPage() {
         <Image />
       </div>
       <div style={styles.buttonRow}>
-        <Button name={"poop"} />
-        <Button name={"here"} />
-        <Button name={"porn"} />
+        <Button
+          name={optionOne}
+          onClick={() => {
+            handleOnClick();
+          }}
+        />
+        <Button
+          name={optionTwo}
+          onClick={() => {
+            handleOnClick();
+          }}
+        />
+        <Button
+          name={optionThree}
+          onClick={() => {
+            handleOnClick();
+          }}
+        />
       </div>
     </div>
   );

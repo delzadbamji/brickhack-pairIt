@@ -1,7 +1,7 @@
 import React from "react";
 export default function Button(props) {
   return (
-    <div style={styles.text}>
+    <div style={styles.text} onClick={props.onClick}>
       <div style={styles.btnText}>{props.name}</div>
     </div>
   );
