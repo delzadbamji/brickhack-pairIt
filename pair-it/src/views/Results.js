@@ -4,6 +4,8 @@ import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
 import SequenceContext from "../utils/SequenceContext";
 import { getQuestions } from "../utils/helpers";
+import { alcohols } from "../constants/constants";
+import Image from "../components/Image";
 
 function Results() {
   const navigate = useNavigate();
@@ -14,10 +16,25 @@ function Results() {
     navigate("/");
   };
 
+  const handleResults = () => {
+    let res = Math.abs(Math.floor(Math.random() * (alcohols.length - 1)));
+    if (res === 4 || res === 3) {
+      res = 5;
+    }
+    return alcohols[res].image;
+  };
+
+  // const getSnack = () => {
+  //   let res = Math.abs(Math.floor(Math.random() * (alcohols.length - 1)));
+  //   return alcohols[res].image;
+  // };
+
   return (
     <div style={styles.outerContainer}>
       <div style={styles.innerContainer}>
         <Header Content={"Viola! We've computed the best match for YOU:"} />
+        <Image source={handleResults()} />
+        <div></div>
         <LandingButton Content={"Try Again?"} onClick={handleOnClick} />
       </div>
     </div>
