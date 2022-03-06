@@ -19,6 +19,46 @@ export const alcohols = {
   55: { alc: "Vodka", image: "https://source.unsplash.com/400x300/?vodka" }
 };
 
+export const foods = {
+  30: {
+    food: "Pizza",
+    image: "https://source.unsplash.com/400x300/?pizza"
+  },
+  40: {
+    food: "Peanuts",
+    image: "https://source.unsplash.com/400x300/?peanuts"
+  },
+  50: {
+    food: "Crackers",
+    image: "https://source.unsplash.com/400x300/?crackers"
+  },
+  20: {
+    food: "Gouda",
+    image: "https://source.unsplash.com/400x300/?cheddar"
+  },
+  10: {
+    food: "Citrus Fruits",
+    image: "https://source.unsplash.com/400x300/?citrus"
+  },
+  60: {
+    food: "Chicken Wings",
+    image: "https://source.unsplash.com/400x300/?chickenwings"
+  },
+  70: {
+    food: "Smoked Ribs",
+    image: "https://source.unsplash.com/400x300/?ribs"
+  },
+  45: {
+    food: "Aged Cheddar",
+    image: "https://source.unsplash.com/400x300/?cheddar"
+  },
+  35: {
+    food: "Fast food",
+    image: "https://source.unsplash.com/400x300/?burgers"
+  },
+  55: { food: "Fries", image: "https://source.unsplash.com/400x300/?fries" }
+};
+
 export const questionList = [
   {
     // Q1
