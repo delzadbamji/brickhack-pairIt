@@ -7,11 +7,9 @@ defaults:
   run:
     shell: bash
     working-directory: pair-it
-
+    
 on:
   push:
-    paths:
-      - 'pair-it/**'
     branches: [ master ]
   pull_request:
     branches: [ master ]
@@ -20,10 +18,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./pair-it
     strategy:
       matrix:
-#         node-version: [12.22.10, 14.19.0, 16.14.0]
         node-version: [14.19.0, 16.14.0]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
