@@ -2,17 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router";
 import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
-function LandingPage() {
-  const navigate = useNavigate();
+function Results() {
   return (
     <div style={styles.outerContainer}>
       <div style={styles.innerContainer}>
-        <Header
-          Content={
-            "Take this personality test to pair the right snack to your drink!"
-          }
-        />
-        <LandingButton Content={"Let's Go!"} />
+        <Header Content={"Viola! We've computed the best match for YOU:"} />
+        <LandingButton Content={"Try Again?"} />
       </div>
     </div>
   );
@@ -51,4 +46,4 @@ const styles = {
     fontWeight: "800"
   }
 };
-export default LandingPage;
+export default Results;

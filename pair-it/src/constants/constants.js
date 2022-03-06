@@ -1,17 +1,17 @@
 let randomNumberTo10 = Math.floor(Math.random() * 10);
 
-const alcohols = [
-  "Martini",
-  "Rum",
-  "Whisky",
-  "Baileys Irish Cream",
-  "Apple Cider",
-  "Sambuca",
-  "Tequila",
-  "Wine",
-  "Beer",
-  "Vodka"
-];
+const alcohols = {
+  30: "Martini",
+  40: "Rum",
+  50: "Whisky",
+  20: "Baileys Irish Cream",
+  10: "Apple Cider",
+  60: "Sambuca",
+  70: "Tequila",
+  45: "Wine",
+  35: "Beer",
+  55: "Vodka"
+};
 
 let questionList = [
   {
