@@ -1,9 +1,9 @@
 import React from "react";
-// import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
 function LandingPage() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div style={styles.outerContainer}>
       <div style={styles.innerContainer}>
@@ -12,7 +12,12 @@ function LandingPage() {
             "Take this personality test to pair the right snack to your drink!"
           }
         />
-        <LandingButton Content={"Let's Go!"} />
+        <LandingButton
+          Content={"Let's Go!"}
+          onClick={() => {
+            navigate("/quiz");
+          }}
+        />
       </div>
     </div>
   );

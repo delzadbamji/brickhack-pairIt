@@ -1,6 +1,6 @@
 import React from "react";
 
-const notFound404 = (props) => {
+const ErrorPage = (props) => {
   return (
     <div style={{ background: "white" }}>
       <h1> 404: PAGE NOT FOUND</h1>
@@ -8,4 +8,4 @@ const notFound404 = (props) => {
   );
 };
 
-export default notFound404;
+export default ErrorPage;

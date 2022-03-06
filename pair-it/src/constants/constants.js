@@ -1,6 +1,6 @@
-let randomNumberTo10 = Math.floor(Math.random() * 10);
+export const randomNumberTo10 = Math.floor(Math.random() * 10);
 
-const alcohols = {
+export const alcohols = {
   30: "Martini",
   40: "Rum",
   50: "Whisky",
@@ -13,7 +13,7 @@ const alcohols = {
   55: "Vodka"
 };
 
-let questionList = [
+export const questionList = [
   {
     // Q1
     question: "What food would you choose?",
@@ -37,7 +37,7 @@ let questionList = [
     question: "What is your Favourite Game?",
     answers: [
       {
-        content: "Polo",
+        content: "Tennis",
         value: ""
       },
       {
@@ -59,11 +59,11 @@ let questionList = [
         value: ""
       },
       {
-        content: "adventurous",
+        content: "Adventurous",
         value: ""
       },
       {
-        content: "introverted",
+        content: "Introverted",
         value: ""
       }
     ]
@@ -95,11 +95,11 @@ let questionList = [
         value: ""
       },
       {
-        content: "Scuba Diving",
+        content: "Sky Diving",
         value: ""
       },
       {
-        content: "dancing",
+        content: "Dancing",
         value: ""
       }
     ]
@@ -109,15 +109,15 @@ let questionList = [
     question: "What is your spirit animal",
     answers: [
       {
-        content: "wolf",
+        content: "Wolf",
         value: ""
       },
       {
-        content: "deer",
+        content: "Deer",
         value: ""
       },
       {
-        content: "horse",
+        content: "Horse",
         value: ""
       }
     ]
@@ -127,15 +127,15 @@ let questionList = [
     question: "choose a pet",
     answers: [
       {
-        content: "cat",
+        content: "Cat",
         value: ""
       },
       {
-        content: "dog",
+        content: "Dog",
         value: ""
       },
       {
-        content: "lizard",
+        content: "Lizard",
         value: ""
       }
     ]
@@ -145,15 +145,15 @@ let questionList = [
     question: "Choose a superhero",
     answers: [
       {
-        content: "ironman",
+        content: "Ironman",
         value: ""
       },
       {
-        content: "superman",
+        content: "Superman",
         value: ""
       },
       {
-        content: "groot",
+        content: "Groot",
         value: ""
       }
     ]
@@ -163,15 +163,15 @@ let questionList = [
     question: "What is your ideal place to live",
     answers: [
       {
-        content: "tent",
+        content: "Tent",
         value: ""
       },
       {
-        content: "apartment",
+        content: "Apartment",
         value: ""
       },
       {
-        content: "house",
+        content: "House",
         value: ""
       }
     ]
@@ -181,15 +181,15 @@ let questionList = [
     question: "What is your choice of transport?",
     answers: [
       {
-        content: "motorbike",
+        content: "Motorbike",
         value: ""
       },
       {
-        content: "car",
+        content: "Car",
         value: ""
       },
       {
-        content: "bicycle",
+        content: "Bicycle",
         value: ""
       }
     ]
@@ -199,15 +199,15 @@ let questionList = [
     question: "Which department would you fit best in?",
     answers: [
       {
-        content: "army",
+        content: "Army",
         value: ""
       },
       {
-        content: "navy",
+        content: "Navy",
         value: ""
       },
       {
-        content: "air force",
+        content: "Air Force",
         value: ""
       }
     ]
@@ -217,15 +217,15 @@ let questionList = [
     question: "What fruit would you choose",
     answers: [
       {
-        content: "apple",
+        content: "Apple",
         value: ""
       },
       {
-        content: "pineapple",
+        content: "Pineapple",
         value: ""
       },
       {
-        content: "watermelon",
+        content: "Watermelon",
         value: ""
       }
     ]
@@ -235,33 +235,33 @@ let questionList = [
     question: "What is important to you?",
     answers: [
       {
-        content: "inner beauty",
+        content: "Inner Beauty",
         value: ""
       },
       {
-        content: "outer beauty",
+        content: "Outer Beauty",
         value: ""
       },
       {
-        content: "intelligence",
+        content: "Intelligence",
         value: ""
       }
     ]
   },
   {
     // Q14
-    question: "The hard Decision: Choose your mobile OS",
+    question: "Choose the color you like the most",
     answers: [
       {
-        content: "iOS",
+        content: "Red",
         value: ""
       },
       {
-        content: "Android",
+        content: "Blue",
         value: ""
       },
       {
-        content: "OxygenOS",
+        content: "Yellow",
         value: ""
       }
     ]
@@ -343,7 +343,7 @@ let questionList = [
     question: "Favorite beverage?",
     answers: [
       {
-        content: "Orgnic Juice",
+        content: "Organic Juice",
         value: ""
       },
       {
