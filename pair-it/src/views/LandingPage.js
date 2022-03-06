@@ -26,18 +26,18 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
+    height: "100vh"
   },
   innerContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    gap: "50px",
+    gap: "50px"
   },
   header: {
     fontSize: "20px",
-    fontWeight: "800",
+    fontWeight: "800"
   },
   start: {
     height: "60px",
@@ -50,11 +50,11 @@ const styles = {
     // #D14B32
     // boxShadow: "inset -10px 10px 0.4em pink",
 
-    borderRadius: "4px",
+    borderRadius: "4px"
   },
   startText: {
     fontSize: "26px",
-    fontWeight: "800",
-  },
+    fontWeight: "800"
+  }
 };
 export default LandingPage;

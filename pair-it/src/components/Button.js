@@ -1,24 +1,28 @@
 import React from "react";
 export default function Button(props) {
   return (
-    <div style={styles.btn}>
-      <div style={styles.btnText}>Yes</div>
+    <div style={styles.text}>
+      <div style={styles.btnText}>{props.name}</div>
     </div>
   );
 }
 const styles = {
-  btn: {
-    height: "60px",
-    width: "200px",
+  btnText: {
+    fontSize: "30px",
+    fontWeight: "700",
+    color: "#FFBF00"
+  },
+  text: {
+    height: "100%",
+    width: "100%",
+    minWidth: "150px",
+    minHeight: "60px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    border: "1px solid #D94646",
-    backgroundColor: "#D9464612",
+    border: "1px solid #800020",
+    backgroundColor: "#AA336A",
     borderRadius: "10px",
-  },
-  btnText: {
-    fontSize: "14px",
-    fontWeight: "400",
-  },
+    cursor: "pointer"
+  }
 };
