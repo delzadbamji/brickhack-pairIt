@@ -1,16 +1,22 @@
 // export const randomNumberTo10 = Math.abs(Math.floor(Math.random() * 10));
 
 export const alcohols = {
-  30: "Martini",
-  40: "Rum",
-  50: "Whisky",
-  20: "Baileys Irish Cream",
-  10: "Apple Cider",
-  60: "Sambuca",
-  70: "Tequila",
-  45: "Wine",
-  35: "Beer",
-  55: "Vodka"
+  30: { alc: "Martini", image: "https://source.unsplash.com/400x300/?martini" },
+  40: { alc: "Rum", image: "https://source.unsplash.com/400x300/?rum" },
+  50: { alc: "Whisky", image: "https://source.unsplash.com/400x300/?whisky" },
+  20: {
+    alc: "Baileys Irish Cream",
+    image: "../constants/baileys.jpg"
+  },
+  10: {
+    alc: "Apple Cider",
+    image: "../constants/appleCider.jpg"
+  },
+  60: { alc: "Sambuca", image: "https://source.unsplash.com/400x300/?samuca" },
+  70: { alc: "Tequila", image: "https://source.unsplash.com/400x300/?tequila" },
+  45: { alc: "Wine", image: "https://source.unsplash.com/400x300/?wine" },
+  35: { alc: "Beer", image: "https://source.unsplash.com/400x300/?beer" },
+  55: { alc: "Vodka", image: "https://source.unsplash.com/400x300/?vodka" }
 };
 
 export const questionList = [
