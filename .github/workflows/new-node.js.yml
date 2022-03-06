@@ -5,7 +5,7 @@ name: Node.js CI
 defaults:
   run:
     shell: bash
-    working-directory: pair-it
+    working-directory: ../pair-it
     
 on:
   push:
