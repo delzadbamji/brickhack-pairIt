@@ -1,22 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router";
-
+import LandingButton from "../components/LandingButton";
+import Header from "../components/Header";
 function LandingPage() {
   const navigate = useNavigate();
   return (
     <div style={styles.outerContainer}>
       <div style={styles.innerContainer}>
-        <div style={styles.header}>
-          Personality test to pair the right snack to your drink.
-        </div>
-        <div
-          style={styles.start}
-          onClick={() => {
-            navigate("/quiz");
-          }}
-        >
-          <div style={styles.startText}>PLAY</div>
-        </div>
+        <Header
+          Content={
+            "Take this personality test to pair the right snack to your drink!"
+          }
+        />
+        <LandingButton />
       </div>
     </div>
   );
@@ -26,18 +22,16 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
+    height: "100vh"
   },
   innerContainer: {
     display: "flex",
     justifyContent: "center",
+    background: "antiquewhite",
+    padding: "50px",
     alignItems: "center",
     flexDirection: "column",
-    gap: "50px",
-  },
-  header: {
-    fontSize: "20px",
-    fontWeight: "800",
+    gap: "50px"
   },
   start: {
     height: "60px",
@@ -50,11 +44,11 @@ const styles = {
     // #D14B32
     // boxShadow: "inset -10px 10px 0.4em pink",
 
-    borderRadius: "4px",
+    borderRadius: "4px"
   },
   startText: {
     fontSize: "26px",
-    fontWeight: "800",
-  },
+    fontWeight: "800"
+  }
 };
 export default LandingPage;
