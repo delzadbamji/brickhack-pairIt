@@ -3,7 +3,7 @@
 
 ### At pairIt we'll determine what will add the pzaz to your pizza :pizza: by pairing a drink :tropical_drink: with your food.  
 
-### What's fun is that you will help us determine YOUR spirit food :poultry_leg: and YOUR spirit :cocktail: to complement it.
+### What's fun is that YOU will help us determine YOUR spirit food :poultry_leg: and YOUR spirit :cocktail: to complement it.
 
 ![cheers](https://user-images.githubusercontent.com/20069712/156911404-69ba9409-8a59-4ee4-93d0-0637bcc03896.gif)
 
