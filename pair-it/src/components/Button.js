@@ -15,10 +15,10 @@ const styles = {
     alignItems: "center",
     border: "1px solid #D94646",
     backgroundColor: "#D9464612",
-    borderRadius: "10px",
+    borderRadius: "10px"
   },
   btnText: {
     fontSize: "14px",
-    fontWeight: "400",
-  },
+    fontWeight: "400"
+  }
 };
