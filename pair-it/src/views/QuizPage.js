@@ -8,24 +8,38 @@ import SequenceContext from "../utils/SequenceContext";
 function QuizPage() {
   const sequence = useContext(SequenceContext);
 
+  /**
+   * @param {*} number denotes the buttonNumber of the selected item in the list of questions
+   * @returns the choice available for each button
+   */
   const getOptions = (number) => {
     const itemNumber = sequence[0];
     return questionList[itemNumber].answers[number].content;
   };
 
+  /**
+   * @param {*} number denotes the buttonNumber of the selected item in the list of questions
+   * @returns the image url for each choice
+   */
   const getImage = (number) => {
     const itemNumber = sequence[0];
     return questionList[itemNumber].answers[number].image;
   };
 
+  // Store state of each button/choice
   const [optionOne, setOne] = useState(getOptions(0));
   const [optionTwo, setTwo] = useState(getOptions(1));
   const [optionThree, setThree] = useState(getOptions(2));
 
+  // Storing images associated with each button/choice
   const [ImageOne, setImageOne] = useState(getImage(0));
   const [ImageTwo, setImageTwo] = useState(getImage(1));
   const [ImageThree, setImageThree] = useState(getImage(2));
 
+  /** This function updates the quiz page's components.
+   *
+   * @param {*} index denotes the current question number and it is incremented each time.
+   */
   const updateOption = (index) => {
     const itemNumber = sequence[index];
     setOne(questionList[itemNumber]?.answers[0]?.content);
@@ -40,6 +54,7 @@ function QuizPage() {
   const navigate = useNavigate();
   const [index, setIndex] = useState(1);
 
+  // This function handles all the onclick activities on this page.
   const handleOnClick = () => {
     if (index === 7) {
       navigate("/results");
@@ -47,6 +62,7 @@ function QuizPage() {
     updateOption(index);
     setIndex(index + 1);
   };
+
   return (
     <div style={styles.outerContainer}>
       <div style={styles.header}>
