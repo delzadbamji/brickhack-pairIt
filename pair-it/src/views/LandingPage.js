@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router";
 import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
 function LandingPage() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div style={styles.outerContainer}>
       <div style={styles.innerContainer}>

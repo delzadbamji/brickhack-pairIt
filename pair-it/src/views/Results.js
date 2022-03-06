@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router";
 import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
 function Results() {
