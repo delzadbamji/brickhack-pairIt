@@ -2,14 +2,14 @@ import React, { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import LandingButton from "../components/LandingButton";
 import Header from "../components/Header";
-// import SequenceContext from "../utils/SequenceContext";
+import SequenceContext from "../utils/SequenceContext";
 import { getQuestions } from "../utils/helpers";
 import { alcohols, foods } from "../constants/constants";
 import Image from "../components/Image";
 
 function Results() {
   const navigate = useNavigate();
-//   const [sequence, setContext] = useContext(SequenceContext);
+  const [sequence, setContext] = useContext(SequenceContext);
   const [number, setNumber] = useState(0);
   const handleOnClick = () => {
     setContext(getQuestions());
