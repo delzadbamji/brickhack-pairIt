@@ -5,7 +5,7 @@ function Image(props) {
     <div>
       <img
         src={props.source}
-        alt="image to display"
+        alt="display"
       ></img>
     </div>
   );
