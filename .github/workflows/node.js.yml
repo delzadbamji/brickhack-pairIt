@@ -5,6 +5,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./pair-it/public
     steps:
       - uses: actions/checkout@v2
       - name: npm install and build webpack
@@ -14,7 +17,7 @@ jobs:
       - uses: actions/upload-artifact@main
         with:
           name: webpack artifacts
-          path: public/
+          path: ./pair-it/public/
           
   test:
     needs: build
@@ -38,5 +41,5 @@ jobs:
     - name: npm install
       run: 
         npm install
-      env:
-        CI: true
+#       env:
+#         CI: true
